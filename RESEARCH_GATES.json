@@ -1,0 +1,274 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 4 November 2026 for release 0.1.0-candidate from the dated searches summarised in audit/prior_art_record.md. It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 1(a): validity outside the interior of the hull, by separation from a halfspace.",
+   "unit": "statement",
+   "paperLocation": "Section 3, Theorem 1(a); Section 8",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    }
+   ],
+   "closestPriorWork": "Martin 2023, Theorem 5 (halfspace validity as a special case); Martin 2024, Proposition 1",
+   "verdict": "known-cited"
+  },
+  {
+   "claim": "Theorem 1(b),(c) with Theorem 4: exact calibration classification of a hypothesis by hull position, with the tail condition (T) necessary and sufficient and its dimension effect (Lemma 0(c)).",
+   "unit": "statement",
+   "paperLocation": "Sections 2-4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "web search, arXiv API, GitHub issues and code",
+     "query": "tail criterion for false confidence; exact marginalisation only linear functions; finite-level false confidence log-concave"
+    }
+   ],
+   "closestPriorWork": "Martin 2024 (Gaussian sufficient condition and the question); classical Laplace-transform growth along rays",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Corollary 5: both sides valid only for almost-halfspaces, correcting the conjecture of Martin 2024 in these models.",
+   "unit": "statement",
+   "paperLocation": "Section 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    }
+   ],
+   "closestPriorWork": "Martin 2024, Section 3",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 6: exact marginal posteriors only for strictly monotone functions of one linear form.",
+   "unit": "statement",
+   "paperLocation": "Section 4",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "web search, arXiv API, GitHub issues and code",
+     "query": "tail criterion for false confidence; exact marginalisation only linear functions; finite-level false confidence log-concave"
+    }
+   ],
+   "closestPriorWork": "Efron and Tibshirani 1998; Fraser 2011 (curvature effects, asymptotic or for particular functionals)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 7: exact logarithmic tail rate at bounded hypotheses.",
+   "unit": "statement",
+   "paperLocation": "Section 5",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    }
+   ],
+   "closestPriorWork": "None found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Theorem 8: finite-level high-confidence theorem for log-concave errors.",
+   "unit": "statement",
+   "paperLocation": "Section 6",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "web search, arXiv API, GitHub issues and code",
+     "query": "tail criterion for false confidence; exact marginalisation only linear functions; finite-level false confidence log-concave"
+    }
+   ],
+   "closestPriorWork": "Balch, Martin and Ferson 2019 (existence theorem, hypothesis chosen after the level)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Proposition 9: tail trichotomy for bounded hypotheses.",
+   "unit": "statement",
+   "paperLocation": "Section 7",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    }
+   ],
+   "closestPriorWork": "None found",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Method: Gaussian converse combines the classical growth of a Laplace transform along rays, governed by the support function of the hull, with a comparison to the sampling tail; Theorem 8 uses Prekopa log-concavity of the posterior mass.",
+   "unit": "method",
+   "paperLocation": "Sections 3, 6, 8",
+   "searches": [
+    {
+     "date": "2026-11-01",
+     "corpus": "web search, arXiv, Crossref, OpenAlex, forward citations of Martin (2024), Evidence Press feed",
+     "query": "false confidence characterisation; which hypotheses are afflicted; convex hull calibration location model; confidence distribution marginalisation; problem of regions"
+    },
+    {
+     "date": "2026-11-04",
+     "corpus": "web search, arXiv API, GitHub issues and code",
+     "query": "tail criterion for false confidence; exact marginalisation only linear functions; finite-level false confidence log-concave"
+    }
+   ],
+   "closestPriorWork": "Classical Laplace-transform support-function growth; Saumard and Wellner 2014, Theorem 3.3",
+   "verdict": "partially-known-cited"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Balch, Martin and Ferson, Proc. R. Soc. A 475 (2019) 20180565, arXiv version",
+   "usedFor": "False confidence theorem and the conjunction example",
+   "readWhat": "Complete open author version",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Sections 1, 6"
+  },
+  {
+   "citation": "Martin, LNCS (2024) 140-149, arXiv 2404.16228v1",
+   "usedFor": "The question, Proposition 1 and the conjecture in Section 3",
+   "readWhat": "Complete arXiv version and author PDF",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Sections 1, 4, 8"
+  },
+  {
+   "citation": "Martin, PMLR 215 (2023) 299-310",
+   "usedFor": "Theorem 5, halfspace validity",
+   "readWhat": "Complete proceedings PDF",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Section 8"
+  },
+  {
+   "citation": "Martin, JASA 121 (2026) 807-826, arXiv 2507.09007v2",
+   "usedFor": "Characterisation still treated as open (Section 2.4, Open Question in Section 7)",
+   "readWhat": "Complete arXiv version",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Section 1"
+  },
+  {
+   "citation": "Efron and Tibshirani, Ann. Statist. 26 (1998) 1687-1718",
+   "usedFor": "First-order confidence value and curvature effect",
+   "readWhat": "Complete publisher PDF",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Section 8"
+  },
+  {
+   "citation": "Shimodaira, J. Statist. Plann. Inference 138 (2008) 1227-1241, read in author report B-436 of the same title",
+   "usedFor": "Multiscale bootstrap for nonsmooth boundaries",
+   "readWhat": "Complete author report",
+   "date": "2026-11-04",
+   "evidenceLocator": "paper Section 8; audit/prior_art_record.md"
+  },
+  {
+   "citation": "Other sources listed in audit/prior_art_record.md",
+   "usedFor": "Literature comparison in Section 8",
+   "readWhat": "As recorded there",
+   "date": "2026-11-04",
+   "evidenceLocator": "audit/prior_art_record.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "The model assumes known shape, an unrestricted Euclidean parameter and exact matching of sampling and posterior error laws.",
+   "closingQuestion": "What replaces the classification under unknown scale, informative priors or approximate posteriors?",
+   "triedOrSearched": "Section 8 records the halfspace calculation under mismatch; a mismatch log-rate proposal from review was not pursued.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the revision budget."
+  },
+  {
+   "limitation": "Group-invariant models with right-Haar posteriors are not covered.",
+   "closingQuestion": "Does a hull analogue hold on groups?",
+   "triedOrSearched": "Listed as an open direction in Section 8.",
+   "estimatedCost": "months",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the scope of this release."
+  },
+  {
+   "limitation": "No exact crossover formula for convex sets; Theorem 8 does not locate the crossover and its bound one half can be far from the exact probability.",
+   "closingQuestion": "Is there an exact crossover formula?",
+   "triedOrSearched": "Listed as an open direction in Section 8; Table 2 shows the gap.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the revision budget."
+  },
+  {
+   "limitation": "At hull boundary points Theorem 7 gives coefficient zero and does not determine the finer behaviour.",
+   "closingQuestion": "What is the finer rate on the boundary?",
+   "triedOrSearched": "Stated after Theorem 7.",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research.",
+   "whyNotClosedNow": "Beyond the revision budget."
+  },
+  {
+   "limitation": "The hull criterion concerns all thresholds and may be triggered only at low thresholds.",
+   "closingQuestion": "What can be said at conventional levels?",
+   "triedOrSearched": "Theorem 8 and Table 2.",
+   "estimatedCost": "done",
+   "decision": "CLOSED",
+   "cheap": true
+  },
+  {
+   "limitation": "Prior-art findings are records of dated searches, not proof of priority.",
+   "closingQuestion": "Do these results appear elsewhere?",
+   "triedOrSearched": "Dated searches summarised in audit/prior_art_record.md.",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Searches cannot certify absence.",
+   "whyNotClosedNow": "No further search would establish priority."
+  },
+  {
+   "limitation": "Finite checks are floating-point sanity checks of formulas, not proofs.",
+   "closingQuestion": "Do the checks fail under a plausible corruption, including under python -O?",
+   "triedOrSearched": "Explicit SystemExit checks; corruption negative controls run in the release gate plan.",
+   "estimatedCost": "1 hour",
+   "decision": "CLOSED",
+   "cheap": true
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead, November 2026",
+  "date": "2026-11-04",
+  "proposals": [
+   "Tail characterisation (T)",
+   "Marginalisation theorem",
+   "Finite-level high-confidence theorem",
+   "Heavy-tail trichotomy",
+   "Mismatch log-rate",
+   "Unknown scale",
+   "Group-invariant models"
+  ],
+  "actions": [
+   "First four added in the revision round (Lemma 0, Theorems 1(c), 6, 8, Proposition 9)",
+   "Remaining items not done and listed as limits or open directions in Section 8"
+  ]
+ }
+}

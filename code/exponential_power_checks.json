@@ -1,0 +1,255 @@
+{
+  "scope": "24 finite deterministic sanity checks, not formal or interval proof verification",
+  "density": "c_p exp(-abs(z)^p/p)",
+  "hypothesis": "(-2,-1) union (1,2)",
+  "environment": {
+    "python": "3.11.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "tail_checks": [
+    {
+      "p": 1.5,
+      "theta": 0.0,
+      "log_t": -10.0,
+      "cutoff": 7.320159810378181,
+      "log_F": -14.390157186750805,
+      "scaled_log_ratio": -1.7801215201424436,
+      "predicted_limit": -2.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 2.0,
+      "log_t": -10.0,
+      "cutoff": 7.320159810378181,
+      "log_F": -9.913804182909015,
+      "scaled_log_ratio": 0.0349506913813913,
+      "predicted_limit": 0.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 3.0,
+      "log_t": -10.0,
+      "cutoff": 7.320159810378181,
+      "log_F": -7.626697798221043,
+      "scaled_log_ratio": 0.9623268925172478,
+      "predicted_limit": 1.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 0.0,
+      "log_t": -40.0,
+      "cutoff": 16.749829190258403,
+      "log_F": -47.285159591052,
+      "scaled_log_ratio": -1.8608955037051693,
+      "predicted_limit": -2.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 2.0,
+      "log_t": -40.0,
+      "cutoff": 16.749829190258403,
+      "log_F": -39.98030458374057,
+      "scaled_log_ratio": 0.0050309277515064275,
+      "predicted_limit": 0.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 3.0,
+      "log_t": -40.0,
+      "cutoff": 16.749829190258403,
+      "log_F": -36.17142301614398,
+      "scaled_log_ratio": 0.9779582184579088,
+      "predicted_limit": 1.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 0.0,
+      "log_t": -100.0,
+      "cutoff": 29.75269020005385,
+      "log_F": -110.06023885011652,
+      "scaled_log_ratio": -1.8934094434216588,
+      "predicted_limit": -2.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 2.0,
+      "log_t": -100.0,
+      "cutoff": 29.75269020005385,
+      "log_F": -99.99515777256079,
+      "scaled_log_ratio": 0.0009113420960670313,
+      "predicted_limit": 0.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 3.0,
+      "log_t": -100.0,
+      "cutoff": 29.75269020005385,
+      "log_F": -94.75666013488151,
+      "scaled_log_ratio": 0.9868343449489376,
+      "predicted_limit": 1.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 0.0,
+      "log_t": -200.0,
+      "cutoff": 46.40070394841719,
+      "log_F": -212.80329491530628,
+      "scaled_log_ratio": -1.912558220167493,
+      "predicted_limit": -2.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 2.0,
+      "log_t": -200.0,
+      "cutoff": 46.40070394841719,
+      "log_F": -199.99878284370936,
+      "scaled_log_ratio": 0.00018181899927193794,
+      "predicted_limit": 0.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 1.5,
+      "theta": 3.0,
+      "log_t": -200.0,
+      "cutoff": 46.40070394841719,
+      "log_F": -193.361726242337,
+      "scaled_log_ratio": 0.9916263842178947,
+      "predicted_limit": 1.0,
+      "root_log_residual": 0.0
+    },
+    {
+      "p": 3.0,
+      "theta": 0.0,
+      "log_t": -10.0,
+      "cutoff": 4.751946811235282,
+      "log_F": -39.156012399192306,
+      "scaled_log_ratio": -3.0198169823588032,
+      "predicted_limit": -2.0,
+      "root_log_residual": 6.394884621840902e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 2.0,
+      "log_t": -10.0,
+      "cutoff": 4.751946811235282,
+      "log_F": -9.999986750950816,
+      "scaled_log_ratio": 1.3722625432484658e-06,
+      "predicted_limit": 0.0,
+      "root_log_residual": 6.394884621840902e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 3.0,
+      "log_t": -10.0,
+      "cutoff": 4.751946811235282,
+      "log_F": -4.102730765452411,
+      "scaled_log_ratio": 0.6108062220649301,
+      "predicted_limit": 1.0,
+      "root_log_residual": 6.394884621840902e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 0.0,
+      "log_t": -40.0,
+      "cutoff": 6.758498882248358,
+      "log_F": -106.98435383738006,
+      "scaled_log_ratio": -2.753293703749521,
+      "predicted_limit": -2.0,
+      "root_log_residual": 3.623767952376511e-13
+    },
+    {
+      "p": 3.0,
+      "theta": 2.0,
+      "log_t": -40.0,
+      "cutoff": 6.758498882248358,
+      "log_F": -39.99999999999902,
+      "scaled_log_ratio": 4.0304028707965374e-14,
+      "predicted_limit": 0.0,
+      "root_log_residual": 3.623767952376511e-13
+    },
+    {
+      "p": 3.0,
+      "theta": 3.0,
+      "log_t": -40.0,
+      "cutoff": 6.758498882248358,
+      "log_F": -21.32729004397375,
+      "scaled_log_ratio": 0.7675143792337121,
+      "predicted_limit": 1.0,
+      "root_log_residual": 3.623767952376511e-13
+    },
+    {
+      "p": 3.0,
+      "theta": 0.0,
+      "log_t": -100.0,
+      "cutoff": 8.587226757023842,
+      "log_F": -215.6320629127648,
+      "scaled_log_ratio": -2.5802637666593062,
+      "predicted_limit": -2.0,
+      "root_log_residual": 1.4210854715202004e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 2.0,
+      "log_t": -100.0,
+      "cutoff": 8.587226757023842,
+      "log_F": -100.00000000000001,
+      "scaled_log_ratio": -3.1710714650622627e-16,
+      "predicted_limit": 0.0,
+      "root_log_residual": 1.4210854715202004e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 3.0,
+      "log_t": -100.0,
+      "cutoff": 8.587226757023842,
+      "log_F": -62.537351393447324,
+      "scaled_log_ratio": 0.8359577124858746,
+      "predicted_limit": 1.0,
+      "root_log_residual": 1.4210854715202004e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 0.0,
+      "log_t": -200.0,
+      "cutoff": 10.360634579841172,
+      "log_F": -375.64383004941817,
+      "scaled_log_ratio": -2.469062395373138,
+      "predicted_limit": -2.0,
+      "root_log_residual": 2.842170943040401e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 2.0,
+      "log_t": -200.0,
+      "cutoff": 10.360634579841172,
+      "log_F": -200.00000000000003,
+      "scaled_log_ratio": -3.99529968955292e-16,
+      "predicted_limit": 0.0,
+      "root_log_residual": 2.842170943040401e-14
+    },
+    {
+      "p": 3.0,
+      "theta": 3.0,
+      "log_t": -200.0,
+      "cutoff": 10.360634579841172,
+      "log_F": -137.87388097769707,
+      "scaled_log_ratio": 0.8733199691972446,
+      "predicted_limit": 1.0,
+      "root_log_residual": 2.842170943040401e-14
+    }
+  ],
+  "max_root_log_residual": 3.623767952376511e-13,
+  "laplace_coefficient": 0.30000000000000004,
+  "laplace_coefficient_exact": "3/10 (proved analytically in manuscript)"
+}

@@ -1,0 +1,129 @@
+{
+ "schemaVersion": "1.0",
+ "paper": "An essential convex hull criterion for false confidence in location models",
+ "version": "0.1.0-candidate",
+ "doi": "10.5281/zenodo.23948952",
+ "status": "unrefereed candidate; written proofs; internal AI-assisted review only; no proof-assistant verification",
+ "definitions": {
+  "validity": "(V): F_{H,theta}(t)=P_theta{q_H(X)<=t}>=t for every t in (0,1).",
+  "hull": "C_H is the closed convex hull of the essential support of H.",
+  "T": "(T): liminf_{R->infinity} S(R)/g(R-b)=0 for every b>0; (T+) has the limit in place of the liminf."
+ },
+ "claims": [
+  {
+   "id": "L0",
+   "name": "Lemma 0",
+   "location": "Section 2",
+   "statement": "Tail asymptotics: S(R) ~ c R^{d-p} exp(-R^p/p) for f_{p,d}; f_{p,d} satisfies (T+) for p>1 and fails (T) for 0<p<=1; g proportional to exp(-(1+r)log(1+r)) satisfies (T+) for d=1 and fails (T) for d>=2.",
+   "hypotheses": [
+    "The stated radial densities on R^d."
+   ],
+   "evidence": "written proof; direction of tail ratios checked in code/verify_extensions.py"
+  },
+  {
+   "id": "T1",
+   "name": "Theorem 1",
+   "location": "Section 3",
+   "statement": "(a) theta not in int C_H implies H valid at theta. (b) Under (T), theta in int C_H implies liminf F(t)/t=0 as t->0, so (V) fails; under (T+), F(t)=o(t). (c) If (T) fails there is a bounded nonconvex open H valid at every parameter of C_H and every false parameter, so (T) is necessary for the equivalence.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "lambda_d(H)>0, H Lebesgue measurable.",
+    "Part (b) assumes (T); part (c) assumes (T) fails."
+   ],
+   "evidence": "written proof; finite Gaussian and exponential-power illustrations"
+  },
+  {
+   "id": "C2",
+   "name": "Corollary 2",
+   "location": "Section 4",
+   "statement": "A positive-measure H satisfies (V) at every theta not in H if and only if int C_H is contained in H.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "(T).",
+    "lambda_d(H)>0."
+   ],
+   "evidence": "written proof"
+  },
+  {
+   "id": "C3",
+   "name": "Corollary 3",
+   "location": "Section 4",
+   "statement": "A nonempty open hypothesis, or a nonempty regular closed one, is valid at every false parameter if and only if it is convex.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "(T).",
+    "H nonempty open, or H the closure of its interior."
+   ],
+   "evidence": "written proof"
+  },
+  {
+   "id": "T4",
+   "name": "Theorem 4",
+   "location": "Section 4",
+   "statement": "Four-way classification of the law of q_H(X) at each theta into Conservative, Anti-conservative, Crossing and Exact rows; Exact holds precisely when H agrees almost everywhere with a halfspace whose boundary passes through theta.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "(T); the o() statements need (T+).",
+    "H and its complement have positive measure."
+   ],
+   "evidence": "written proof"
+  },
+  {
+   "id": "C5",
+   "name": "Corollary 5",
+   "location": "Section 4",
+   "statement": "If H and its complement are each valid at every parameter where they are false, H agrees almost everywhere with a halfspace. This is the corrected form of the conjecture of Martin (2024, Section 3); a ball is non-linear and valid at every false parameter.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "(T).",
+    "H and its complement have positive measure."
+   ],
+   "evidence": "written proof"
+  },
+  {
+   "id": "T6",
+   "name": "Theorem 6",
+   "location": "Section 4",
+   "statement": "The posterior of a measurable real function phi is exact at every theta if and only if its sublevel sets are almost everywhere parallel halfspaces through theta; then phi=psi(a^T u) almost everywhere with psi strictly increasing.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "(T).",
+    "phi measurable."
+   ],
+   "evidence": "written proof"
+  },
+  {
+   "id": "T7",
+   "name": "Theorem 7",
+   "location": "Section 5",
+   "statement": "log{F(t)/t}/(p log(1/t))^{(p-1)/p} tends to -rho as t->0, where rho is the signed shape-metric distance from theta to the boundary of C_H.",
+   "hypotheses": [
+    "Model (M) with f=f_{p,d}, p>1.",
+    "H has positive measure and bounded essential support."
+   ],
+   "evidence": "written proof; finite-threshold tables in code/verify_examples.py and code/verify_exponential_power.py"
+  },
+  {
+   "id": "T8",
+   "name": "Theorem 8",
+   "location": "Section 6",
+   "statement": "If C is closed convex, H^c is contained in C almost everywhere, 0<s<1/2 and Q_theta(C)<=s, then P_theta{q_H(X)>=1-s}>=1/2; if C is also symmetric about theta this holds with probability one.",
+   "hypotheses": [
+    "Model (M): X=theta+AZ, posterior Q_x = law of x+AZ', A invertible, Z has density f(z)=g(|z|) on R^d with g positive, bounded and nonincreasing; flat prior, known shape, exact matching of sampling and posterior laws.",
+    "f log-concave (covers f_{p,d} for p>=1)."
+   ],
+   "evidence": "written proof; tested at each eligible entry of Table 2 in code/verify_extensions.py"
+  },
+  {
+   "id": "P9",
+   "name": "Proposition 9",
+   "location": "Section 7",
+   "statement": "Tail trichotomy for bounded hypotheses: for p>1 hull position decides; for 0<p<1, or p=1 and d>=2, F(t)/t tends to infinity at every theta; for p=1, d=1, F(t)=(t/2)(1/K_+ + 1/K_-) for small t, so hull position does not decide.",
+   "hypotheses": [
+    "Model with f_{p,d} and A=I.",
+    "H has positive measure and bounded essential support."
+   ],
+   "evidence": "written proof; constant K checked in code/verify_extensions.py"
+  }
+ ]
+}

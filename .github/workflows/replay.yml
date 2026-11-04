@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  verify:
+    name: check scripts with and without -O (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned packages
+        run: python -m pip install -r requirements.txt
+      - name: Run every script from a scripts-only copy, with and without -O
+        run: |
+          for mode in "-I -B" "-I -B -O"; do
+            d="$RUNNER_TEMP/run$(echo "$mode" | tr -d ' -')"
+            mkdir "$d"
+            cp code/*.py "$d"/
+            for s in verify_examples verify_exponential_power verify_extensions make_figure; do
+              (cd "$d" && python $mode "$s.py")
+            done
+            python -I -B .github/compare_json.py "$d" code
+          done
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

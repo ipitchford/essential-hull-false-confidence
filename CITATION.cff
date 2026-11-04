@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "An essential convex hull criterion for false confidence in location models"
+type: software
+authors:
+  - name: Anonymous
+version: 0.1.0-candidate
+doi: 10.5281/zenodo.23948952
+date-released: 2026-11-04
+repository-code: "https://github.com/ipitchford/essential-hull-false-confidence"
+url: "https://evidencepress.org/releases/essential-hull-false-confidence/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23948952
+    description: "Version DOI (0.1.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23948951
+    description: "Concept DOI (all versions)"
+keywords:
+  - false confidence
+  - location model
+  - convex hull
+  - essential support
+  - confidence distribution
+  - fiducial inference
+  - satellite conjunction analysis
+abstract: "We determine exactly which hypotheses suffer false confidence under flat-prior posteriors in location models with radially decreasing errors. For exponential-power errors with p>1, including the Gaussian case, a hypothesis is valid at every threshold at a parameter exactly when that parameter lies outside the interior of the closed convex hull of the essential support of the hypothesis. This equivalence holds for a radial density g with tail probability S if and only if liminf S(R)/g(R-b)=0 for every b>0. A hypothesis and its complement are both globally valid only for almost-halfspaces, which corrects a conjecture of Martin (2024) in these models, and only strictly monotone functions of one linear form have exactly calibrated marginal posteriors. With log-concave errors, a finite-level theorem shows that if the complement of a hypothesis fits in a closed convex set of posterior mass at most s<1/2 when the observation equals the truth, the hypothesis receives posterior probability at least 1-s with sampling probability at least one half. Unrefereed candidate; internal AI-assisted review only. Text CC0-1.0; code MIT."

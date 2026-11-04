@@ -1,0 +1,109 @@
+{
+  "title": "An essential convex hull criterion for false confidence in location models",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> Balch, Martin and Ferson (2019) showed that for any additive probability produced from data, some false hypotheses tend to receive high probability, a phenomenon they called false confidence. Martin (2024) asked which hypotheses are affected. This candidate answers that question exactly for flat-prior posteriors in location models with radially decreasing errors.</p><p><strong>Hull criterion.</strong> Let C<sub>H</sub> be the closed convex hull of the essential support of a hypothesis H. For exponential-power errors with p&gt;1, including the Gaussian case, H is valid at every threshold at a parameter exactly when that parameter is not in the interior of C<sub>H</sub>. For a radial density g with tail probability S, this equivalence holds for all hypotheses if and only if liminf S(R)/g(R-b)=0 for every b&gt;0. Tails like exp(-r log r) satisfy this in dimension one and fail it in every higher dimension.</p><p><strong>Complements and marginals.</strong> A hypothesis and its complement are both globally valid only if the hypothesis is almost everywhere a halfspace. This corrects, in these models, a conjecture of Martin (2024): a ball is non-linear yet valid at every false parameter. The posterior of a real function is exactly calibrated at every parameter if and only if its sublevel sets are almost everywhere parallel halfspaces, that is, the function is a strictly monotone function of one linear form.</p><p><strong>High confidence at a fixed level.</strong> All-threshold failure may occur only at low thresholds, so the hull criterion alone says nothing about 95% confidence: (-2,-1) union (1,2) in the standard Gaussian model never receives posterior mass above 0.39. With log-concave errors, if a closed convex set contains the complement of H and has posterior mass at most s&lt;1/2 when the observation equals the truth, then H receives posterior probability at least 1-s with sampling probability at least one half. In a worked satellite conjunction example with sigma/R=10, a certain collision produces a computed collision probability of at most 0.01 with probability one.</p><p>Prior work and limits: the sufficient direction is elementary, halfspace validity is in Martin (2023), and the Gaussian converse combines classical Laplace-transform growth with a tail comparison. The model assumes known shape and exact matching of sampling and posterior error laws. The prior-art finding is a record of dated searches, not proof of priority. The archive contains the manuscript (PDF and Markdown source), three deterministic check scripts with retained output, the figure code and SHA-256 sums. Assurance: written proofs; internal AI-assisted review only (not human peer review, independent reproduction or proof-assistant verification). Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-zero",
+  "version": "0.1.0-candidate",
+  "publication_date": "2026-11-04",
+  "keywords": [
+    "false confidence",
+    "location model",
+    "convex hull",
+    "essential support",
+    "confidence distribution",
+    "fiducial inference",
+    "satellite conjunction analysis",
+    "log-concavity"
+  ],
+  "notes": "Code (code/*.py, code/build.sh, the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/essential-hull-false-confidence/tree/v0.1.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/essential-hull-false-confidence/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://proceedings.mlr.press/v215/martin23a.html",
+      "relation": "references",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1098/rspa.2018.0565",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1002/sta4.201",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1080/01621459.1987.10478396",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1098/rspa.2019.0781",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/aos/1024691353",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.2514/1.G006282",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/11-STS352",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.ijar.2019.06.005",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-3-031-67977-3_15",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1080/01621459.2025.2606127",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/14-SS107",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1214/009053604000000823",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.jspi.2007.04.001",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "doi": "10.5281/zenodo.23948952"
+}
